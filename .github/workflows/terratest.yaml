@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Setup && Terratest eu-de
-        shell: sh
+        shell: bash
         run: |
           ###### INSTALL TERRAFORM && GO ######
           apk update && apk add go wget zip
